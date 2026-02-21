@@ -8,16 +8,108 @@ https://www.tooplate.com/view/2097-pop
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
   color: rgb(0, 0, 0);
-  position: relative;
+  position: reltive;
   background-color: rgba(186, 186, 186);
     background-image: url('../img/.png'), url('../img/Clouds_PNG_Transparent_Clip_Art_Image.png'), url('../img/1-14969_clouds-realistic-cloud-clouds-png.png');
     background-size: 50%, cover, cover;
     background-position: center, top, bottom;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow-y: auto; 
+}
+.myname {
+  font-style: italic;
+  font-family: Impact;
+  position: sticky;
+  z-index: 300;
+  font-size: 180%;
+  text-align: center;
+}
+
+.yap-section{
+  height: 120vh;
+  background-color: rgba(186, 186, 186);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  z-index: -1;
+
+}
+
+.glass-card{
+    position: sticky;
+    width: 450px;
+    height: 180px;
+    font: impact;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    display: flex;
+    z-index: 1;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  width: 80%;
+  height: 20px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 2;
+}
+
+.btnnn {
+  display: inline-block;
+  margin: 20;
+  margin-top: 5px;
+  padding: 10px 20px;
+  background: rgba(150, 150, 150, 0.545);
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.092);
+  transform: scale(1.05);
 }
 
 h1 {
@@ -78,7 +170,7 @@ p {
 
 .tm-site-header {
   margin: 10px;
-  text-align: right;
+  text-align: center;
   width: 100%;
   font-style: italic;
 }
@@ -217,7 +309,7 @@ p {
 }
 
 .details__bg--down {
-  background: #170080;
+  background: #232323;
   background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);}
@@ -249,6 +341,7 @@ p {
 .tm-slider-img-link {
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 1%;
 }
 
 .slick-dots li button:before {
@@ -293,7 +386,7 @@ p {
 }
 
 .tm-btn-submit {
-  background-color: #006599;
+  background-color: #000000;
 }
 
 .tm-btn-gray {
@@ -317,13 +410,13 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #0e7fb9;
+  background-color: #77757d;
   border-color: transparent;
 }
 
 /* Footer */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   text-align: center;
   left: 0;
@@ -384,7 +477,7 @@ p:last-child {
   }
   .content {
     margin-left: auto;
-    margin-right: 0;
+    margin-right: auto;
   }
   .tm-nav ul {
     display: flex;
