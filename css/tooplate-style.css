@@ -485,7 +485,7 @@ p:last-child {
     justify-content: flex-end;
   }
   .grid {
-    justify-content: flex-end;
+    justify-content: center;
   }
   .tm-col-email {
     padding-left: 15px;
