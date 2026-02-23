@@ -23,10 +23,12 @@ body {
 .myname {
   font-style: italic;
   font-family: Impact;
-  position: sticky;
+  position: fixed;
   z-index: 300;
   font-size: 180%;
-  text-align: center;
+  text-align: center !important;
+  width: 100%;
+  left: 0;
 }
 
 .yap-section{
